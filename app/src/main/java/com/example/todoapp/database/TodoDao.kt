@@ -1,6 +1,7 @@
 package com.example.todoapp.database
 
 import androidx.room.Dao
+import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.Query
 import androidx.room.Update
@@ -16,4 +17,8 @@ interface TodoDao {
 
     @Update
     fun updateTodo(todo:TodoEntity)
+
+    @Delete
+    fun deleteTodo(todo:TodoEntity)
+
 }
